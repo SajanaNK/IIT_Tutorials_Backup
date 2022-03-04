@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IdentifyTheCarName">
+
+    <ImageView
+        android:id="@+id/car_image_viewer"
+        android:layout_width="408dp"
+        android:layout_height="259dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/response_textview"
+        android:layout_width="0dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/car_list_dropdown" />
+
+    <Button
+        android:id="@+id/identify_button"
+        android:layout_width="118dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="20dp"
+        android:onClick="checkGuess"
+        android:text="@string/identify"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toEndOf="@+id/car_list_dropdown"
+        app:layout_constraintTop_toBottomOf="@+id/car_image_viewer" />
+
+    <Spinner
+        android:id="@+id/car_list_dropdown"
+        android:layout_width="244dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/car_image_viewer" />
+
+    <TextView
+        android:id="@+id/correct_ansewer_textview"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:gravity="center"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/response_textview"
+        app:layout_constraintVertical_bias="0.054" />
+
+    <TextView
+        android:id="@+id/timer_text_view_ICN"
+        android:layout_width="91dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

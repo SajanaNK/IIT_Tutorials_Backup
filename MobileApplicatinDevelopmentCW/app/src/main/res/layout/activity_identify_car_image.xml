@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IdentifyCarImage">
+
+    <Button
+        android:id="@+id/next_button_ICI"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="@string/next"
+        android:onClick="restartGame"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/car_name_textview_ICI"
+        android:layout_width="0dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/car_imageview_one"
+        android:layout_width="0dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="4dp"
+        android:onClick="checkClickedImageOne"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/car_name_textview_ICI" />
+
+    <TextView
+        android:id="@+id/response_textView_ICI"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/car_imageview_three" />
+
+    <ImageView
+        android:id="@+id/car_imageview_two"
+        android:layout_width="0dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="16dp"
+        android:onClick="checkClickedImageTwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/car_imageview_one" />
+
+    <ImageView
+        android:id="@+id/car_imageview_three"
+        android:layout_width="0dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="16dp"
+        android:onClick="checkClickedImageThree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/car_imageview_two" />
+
+    <TextView
+        android:id="@+id/timer_text_view_ICI"
+        android:layout_width="63dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

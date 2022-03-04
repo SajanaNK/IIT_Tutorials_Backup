@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<CheckBox
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fav_movie_select_check_box_dm"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginTop="16dp"
+    android:textSize="20sp"
+    android:focusable="false"
+    android:clickable="false"
+    android:focusableInTouchMode="false" />

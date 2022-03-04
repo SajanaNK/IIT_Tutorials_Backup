@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/current_feels_like_temperature_textview"
+                android:layout_width="219dp"
+                android:layout_height="64dp"
+                android:textSize="25sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/current_feels_like_temperature_label"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.979"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/current_feels_like_temperature_label"
+                android:layout_width="153dp"
+                android:layout_height="61dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="168dp"
+                android:gravity="center"
+                android:text="Feels Like Temperature :"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/current_feels_like_temperature_textview"
+                app:layout_constraintHorizontal_bias="0.096"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/sunset_text_view"
+                android:layout_width="219dp"
+                android:layout_height="63dp"
+                android:layout_marginEnd="8dp"
+                android:textSize="25sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/sunset_label"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/sunrise_label"
+                android:layout_width="153dp"
+                android:layout_height="61dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Sunrise :"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/description_label" />
+
+            <TextView
+                android:id="@+id/current_temperature_label"
+                android:layout_width="153dp"
+                android:layout_height="61dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Current Temperature :"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/current_temperature_textview"
+                app:layout_constraintHorizontal_bias="0.096"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/current_feels_like_temperature_label" />
+
+            <TextView
+                android:id="@+id/sunset_label"
+                android:layout_width="153dp"
+                android:layout_height="61dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Sunset :"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sunrise_label" />
+
+            <TextView
+                android:id="@+id/description_text_view"
+                android:layout_width="219dp"
+                android:layout_height="62dp"
+                android:layout_marginEnd="4dp"
+                android:textSize="24sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/description_label"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/sunrise_text_view"
+                android:layout_width="219dp"
+                android:layout_height="63dp"
+                android:layout_marginEnd="8dp"
+                android:textSize="25sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/sunrise_label"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/description_label"
+                android:layout_width="153dp"
+                android:layout_height="61dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:text="Description :"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/description_text_view"
+                app:layout_constraintHorizontal_bias="0.111"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/current_temperature_label" />
+
+            <TextView
+                android:id="@+id/current_temperature_textview"
+                android:layout_width="219dp"
+                android:layout_height="60dp"
+                android:textSize="25sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/current_temperature_label"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.979"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/show_weather_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:onClick="showWeather"
+                android:text="@string/show_weather"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/city_name_edit_text" />
+
+            <TextView
+                android:id="@+id/city_name_label"
+                android:layout_width="190dp"
+                android:layout_height="66dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="32dp"
+                android:gravity="center"
+                android:text="@string/city_name"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/city_name_edit_text"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/city_name_edit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.98"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/search_city_edit_text"
+                android:layout_width="196dp"
+                android:layout_height="61dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="12dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sunset_text_view" />
+
+            <Button
+                android:id="@+id/search_city_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:text="Search"
+                android:onClick="showHistory"
+                app:layout_constraintEnd_toEndOf="@+id/search_city_edit_text"
+                app:layout_constraintTop_toBottomOf="@+id/search_city_edit_text" />
+
+            <TextView
+                android:id="@+id/search_city_label"
+                android:layout_width="194dp"
+                android:layout_height="59dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="28dp"
+                android:text="Search City's History Of Weather"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sunset_text_view" />
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="0dp"
+                android:layout_height="134dp"
+                android:layout_marginTop="56dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.724"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/search_city_label">
+
+                <TextView
+                    android:id="@+id/database_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:layout_marginTop="12dp"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sunset_text_view" />
+
+            </androidx.core.widget.NestedScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Mobile Applicatin Development CW</string>
+    <string name="identify_the_car_name">Identify The Car Make</string>
+    <string name="hints">Hints</string>
+    <string name="identify_the_car_image">Identify The Car Image</string>
+    <string name="advanced_level">Advanced Level</string>
+    <string name="identify">Identify</string>
+    <string name="next"> Next </string>
+    <string name="correct"> CORRECT! </string>
+    <string name="wrong"> WRONG! </string>
+
+    <string-array name="car_names">
+
+        <item name="ford">@string/ford</item>
+        <item name="bmw">@string/bmw</item>
+        <item name="benz">@string/benz</item>
+        <item name="audi">@string/audi</item>
+        <item name="toyota">@string/toyota</item>
+        <item name="honda">@string/honda</item>
+        <item name="micro">@string/micro</item>
+        <item name="ferrari">@string/ferrari</item>
+        <item name="lamborghini">@string/lamborghini</item>
+        <item name="tesla">@string/tesla</item>
+
+    </string-array>
+
+    <string name="ford">FORD</string>
+    <string name="bmw">BMW</string>
+    <string name="benz">BENZ</string>
+    <string name="audi">AUDI</string>
+    <string name="toyota">TOYOTA</string>
+    <string name="honda">HONDA</string>
+    <string name="micro">MICRO</string>
+    <string name="ferrari">FERRARI</string>
+    <string name="lamborghini">LAMBORGHINI</string>
+    <string name="tesla">TESLA</string>
+    
+    <string name="submit">Submit</string>
+    <string name="submit_AL">Submit</string>
+    <string name="switch_text_on">Switch : ON</string>
+    <string name="switch_text_off">Switch : OFF</string>
+
+    <string name="label_hints">
+        This is the Hints game. Also known as hangman game. In this game you will get a random car
+        image, Then you have to guess every letter of the car one by one.BUT you have only 3 attempts
+        to guess the correct car name.
+    </string>
+
+    <string name="label_ICI" >
+        This is the Identify car Image game. In this game you will get a Car name along side with
+        3 Car Images. You have to choose the correct car image from those 3.
+    </string>
+
+    <string name="label_ICM">
+        This is the Identify car Make game.In this game you will get a random car image, then you
+        have to select the correct car name from the list given.
+    </string>
+
+    <string name="label_AL">
+        This is the Advanced level mode. You will get 3 car images alongside with 3 text boxes.
+        you have to guess the name of those cars. BUT you have only 3 attempts. Each correct guess
+        will be rewarded with 1 point.
+    </string>
+    <string name="timer_label">Turn on the Timer For Games : </string>
+    <string name="third_car">Third Car :</string>
+    <string name="second_car">Second Car :</string>
+    <string name="first_car">First Car :</string>
+    <string name="points">Points : </string>
+
+</resources>

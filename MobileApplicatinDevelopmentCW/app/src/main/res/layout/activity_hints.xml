@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Hints">
+
+
+    <ImageView
+        android:id="@+id/car_img_imageView"
+        android:layout_width="0dp"
+        android:layout_height="203dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/car_name_textVIew"
+        android:layout_width="0dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:lineSpacingExtra="4sp"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/car_img_imageView" />
+
+    <TextView
+        android:id="@+id/correct_answer_hints_textView"
+        android:layout_width="0dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/response_hints_textView" />
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="113dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:onClick="submitCharacter"
+        android:text="@string/submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/char_guess_textBox"
+        app:layout_constraintTop_toBottomOf="@+id/car_name_textVIew" />
+
+    <TextView
+        android:id="@+id/response_hints_textView"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/char_guess_textBox" />
+
+    <EditText
+        android:id="@+id/char_guess_textBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textCapCharacters"
+        android:maxLength="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/car_name_textVIew" />
+
+    <TextView
+        android:id="@+id/timer_text_view_hints"
+        android:layout_width="76dp"
+        android:layout_height="52dp"
+        android:gravity="center"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

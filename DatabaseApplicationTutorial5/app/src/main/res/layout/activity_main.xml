@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="198dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.007">
+
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"/>
+
+
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/id_edittext_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="128dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/id_label_delete"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+    <Button
+        android:id="@+id/delte_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:onClick="deleteRecord"
+        android:text="@string/delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_edittext_delete" />
+
+    <TextView
+        android:id="@+id/id_label_delete"
+        android:layout_width="179dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="124dp"
+        android:text="@string/id"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+    <Button
+        android:id="@+id/open_add_employee_button"
+        android:layout_width="188dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/add_employee"
+        android:onClick="openAddEmployee"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/open_add_employee_label"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+    <TextView
+        android:id="@+id/open_add_employee_label"
+        android:layout_width="188dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/to_add_employee"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="176dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/edit"
+        android:onClick="editRecord"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delte_button" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="228dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/to_edit_an_employee_s_details"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/id_label_delete" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Tutprial09MAD</string>
+    <string name="textview_with_a_contextual_menu">TextView with a contextual Menu</string>
+    <string name="okButton" > OK </string>
+</resources>
