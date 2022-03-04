@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowEditMovieActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="-47dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/title_lable_sem"
+                android:layout_width="180dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="@string/title"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/year_label_sem"
+                android:layout_width="180dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:text="@string/year"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title_lable_sem" />
+
+            <TextView
+                android:id="@+id/directors_label_sem"
+                android:layout_width="180dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:text="@string/director"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/year_label_sem" />
+
+            <TextView
+                android:id="@+id/actors_label_sem"
+                android:layout_width="180dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="@string/actors_actresses"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/directors_label_sem" />
+
+            <TextView
+                android:id="@+id/review_label_sem"
+                android:layout_width="180dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="56dp"
+                android:gravity="center"
+                android:text="@string/review"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/actors_label_sem" />
+
+            <TextView
+                android:id="@+id/isfav_label_sem"
+                android:layout_width="180dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="56dp"
+                android:gravity="center"
+                android:text="@string/is_favourite"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/review_label_sem" />
+
+            <ImageView
+                android:id="@+id/star_grey_10"
+                android:layout_width="37dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="20dp"
+                android:onClick="rateStarsClick"
+                app:layout_constraintStart_toEndOf="@+id/star_grey_9"
+                app:layout_constraintTop_toBottomOf="@+id/rating_label_sem"
+                app:srcCompat="@drawable/g_10" />
+
+            <ImageView
+                android:id="@+id/star_grey_7"
+                android:layout_width="37dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="20dp"
+                android:onClick="rateStarsClick"
+                app:layout_constraintStart_toEndOf="@+id/star_grey_6"
+                app:layout_constraintTop_toBottomOf="@+id/rating_label_sem"
+                app:srcCompat="@drawable/g_7" />
+
+            <TextView
+                android:id="@+id/rating_label_sem"
+                android:layout_width="180dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="36dp"
+                android:gravity="center"
+                android:text="@string/rating"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/isfav_label_sem" />
+
+            <Button
+                android:id="@+id/update_button_sem"
+                android:layout_width="159dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="104dp"
+                android:backgroundTint="#3AC5C4"
+                android:fontFamily="serif-monospace"
+                android:onClick="updateTheTable"
+                android:text="@string/update"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rating_label_sem" />
+
+            <ImageView
+                android:id="@+id/star_grey_9"
+                android:layout_width="37dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="20dp"
+                android:onClick="rateStarsClick"
+                app:layout_constraintStart_toEndOf="@+id/star_grey_8"
+                app:layout_constraintTop_toBottomOf="@+id/rating_label_sem"
+                app:srcCompat="@drawable/g_9" />
+
+            <ImageView
+                android:id="@+id/star_grey_8"
+                android:layout_width="37dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="20dp"
+                android:onClick="rateStarsClick"
+                app:layout_constraintStart_toEndOf="@+id/star_grey_7"
+                app:layout_constraintTop_toBottomOf="@+id/rating_label_sem"
+                app:srcCompat="@drawable/g_8" />
+
+            <ImageView
+                android:id="@+id/star_grey_1"
+                android:layout_width="37dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="20dp"
+                android:onClick="rateStarsClick"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rating_label_sem"
+                app:srcCompat="@drawable/g_1" />
+
+            <ImageView
+                android:id="@+id/star_grey_6"
+                android:layout_width="37dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="20dp"
+                android:onClick="rateStarsClick"
+                app:layout_constraintStart_toEndOf="@+id/star_grey_5"
+                app:layout_constraintTop_toBottomOf="@+id/rating_label_sem"
+                app:srcCompat="@drawable/g_6" />
+
+            <ImageView
+                android:id="@+id/star_grey_4"
+                android:layout_width="37dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="20dp"
+                android:onClick="rateStarsClick"
+                app:layout_constraintStart_toEndOf="@+id/star_grey_3"
+                app:layout_constraintTop_toBottomOf="@+id/rating_label_sem"
+                app:srcCompat="@drawable/g_4" />
+
+            <ImageView
+                android:id="@+id/star_grey_3"
+                android:layout_width="37dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="20dp"
+                android:onClick="rateStarsClick"
+                app:layout_constraintStart_toEndOf="@+id/star_grey_2"
+                app:layout_constraintTop_toBottomOf="@+id/rating_label_sem"
+                app:srcCompat="@drawable/g_3" />
+
+            <ImageView
+                android:id="@+id/star_grey_2"
+                android:layout_width="37dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="20dp"
+                android:onClick="rateStarsClick"
+                app:layout_constraintStart_toEndOf="@+id/star_grey_1"
+                app:layout_constraintTop_toBottomOf="@+id/rating_label_sem"
+                app:srcCompat="@drawable/g_2" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:backgroundTint="#D30848"
+                android:fontFamily="serif-monospace"
+                android:text="@string/cancel"
+                android:textSize="20sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/update_button_sem"
+                app:layout_constraintStart_toEndOf="@+id/update_button_sem" />
+
+            <RadioGroup
+                android:id="@+id/show_fav_radio_froup"
+                android:layout_width="156dp"
+                android:layout_height="89dp"
+                android:layout_marginTop="48dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.507"
+                app:layout_constraintStart_toEndOf="@+id/isfav_label_sem"
+                app:layout_constraintTop_toBottomOf="@+id/review_edit_text_sem">
+
+                <RadioButton
+                    android:id="@+id/is_fav_radio_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Favourite" />
+
+                <RadioButton
+                    android:id="@+id/not_fav_radio_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Not Favourite" />
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/star_grey_5"
+                android:layout_width="37dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="20dp"
+                android:onClick="rateStarsClick"
+                app:layout_constraintStart_toEndOf="@+id/star_grey_4"
+                app:layout_constraintTop_toBottomOf="@+id/rating_label_sem"
+                app:srcCompat="@drawable/g_5" />
+
+            <EditText
+                android:id="@+id/review_edit_text_sem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                app:layout_constraintBaseline_toBaselineOf="@+id/review_label_sem"
+                app:layout_constraintStart_toEndOf="@+id/review_label_sem" />
+
+            <EditText
+                android:id="@+id/title_edit_text_sem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+
+                android:inputType="textPersonName"
+                app:layout_constraintStart_toEndOf="@+id/title_lable_sem"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/year_edit_text_sem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintStart_toEndOf="@+id/year_label_sem"
+                app:layout_constraintTop_toBottomOf="@+id/title_edit_text_sem" />
+
+            <EditText
+                android:id="@+id/director_name_edit_text_sem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintStart_toEndOf="@+id/directors_label_sem"
+                app:layout_constraintTop_toBottomOf="@+id/year_edit_text_sem" />
+
+            <EditText
+                android:id="@+id/actors_edit_text_sem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                app:layout_constraintBaseline_toBaselineOf="@+id/actors_label_sem"
+                app:layout_constraintStart_toEndOf="@+id/actors_label_sem" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

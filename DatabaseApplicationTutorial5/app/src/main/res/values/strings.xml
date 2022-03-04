@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Database Application Tutorial 5</string>
+    <string name="add_employee">Add Employee</string>
+    <string name="position">Position</string>
+    <string name="address">Address</string>
+    <string name="age">Age</string>
+    <string name="id">ID</string>
+    <string name="employee_name">Employee Name</string>
+    <string name="delete">Delete</string>
+    <string name="add_employee_header">Add Employee</string>
+    <string name="to_add_employee">To add Employee</string>
+    <string name="edit">Edit</string>
+    <string name="to_edit_an_employee_s_details">To edit an employee\'s details</string>
+    <string name="check_id">Check ID :</string>
+    <string name="check">Check</string>
+    <string name="update">Update</string>
+</resources>

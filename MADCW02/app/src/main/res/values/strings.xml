@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MAD CW 02</string>
+    <string name="register_movie">Register Movie</string>
+    <string name="display_movies">Display Movies</string>
+    <string name="show_favourites">Show Favourites</string>
+    <string name="ratings">Ratings</string>
+    <string name="edit_movies">Edit Movies</string>
+    <string name="search">Search</string>
+    <string name="save">Save</string>
+    <string name="title">Title :</string>
+    <string name="year">Year</string>
+    <string name="director">Director</string>
+    <string name="actors_actresses">Actors/Actresses :</string>
+    <string name="review">Review :</string>
+    <string name="is_favourite">is Favourite :</string>
+    <string name="rating">Rating :</string>
+    <string name="update">Update</string>
+    <string name="cancel">Cancel</string>
+    <string name="look_up">Look Up</string>
+</resources>

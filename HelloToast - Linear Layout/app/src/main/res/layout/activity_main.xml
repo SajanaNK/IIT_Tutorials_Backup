@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button_toast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showToast"
+        android:text="@string/button_label_toast" />
+
+    <TextView
+        android:id="@+id/show_count"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#FFFF00"
+        android:gravity="center"
+        android:text="@string/count_initial_value"
+        android:textAlignment="center"
+        android:textSize="160sp"
+        android:textStyle="bold"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/button_count"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:onClick="countUp"
+        android:text="@string/button_label_count" />
+
+    <TextView
+        android:id="@+id/showAverage"
+        android:layout_width="187dp"
+        android:layout_height="52dp"
+        android:gravity="center"
+        android:text="@string/average"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/show_timer"
+        android:layout_width="187dp"
+        android:layout_height="52dp"
+        android:background="#F3ECEC"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:text="@string/_0"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

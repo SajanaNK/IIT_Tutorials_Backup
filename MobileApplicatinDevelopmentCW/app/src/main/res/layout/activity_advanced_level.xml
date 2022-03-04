@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdvancedLevel">
+
+    <ImageView
+        android:id="@+id/AL_imageView01"
+        android:layout_width="227dp"
+        android:layout_height="148dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/answer_AL_label02"
+        android:layout_width="137dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/second_car"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answer_AL_editText01" />
+
+    <TextView
+        android:id="@+id/correct_answer02_text_view_AL"
+        android:layout_width="148dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="12dp"
+        android:gravity="center"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answer_AL_editText02" />
+
+    <EditText
+        android:id="@+id/answer_AL_editText01"
+        android:layout_width="157dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answer_AL_label01" />
+
+    <EditText
+        android:id="@+id/answer_AL_editText02"
+        android:layout_width="157dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answer_AL_label02" />
+
+    <TextView
+        android:id="@+id/correct_answer01_text_view_AL"
+        android:layout_width="148dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="12dp"
+        android:gravity="center"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answer_AL_editText01" />
+
+    <ImageView
+        android:id="@+id/AL_imageView02"
+        android:layout_width="227dp"
+        android:layout_height="148dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AL_imageView01" />
+
+    <TextView
+        android:id="@+id/points_display_AL_textView"
+        android:layout_width="45dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/answer_AL_label03"
+        android:layout_width="97dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="64dp"
+        android:text="@string/third_car"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answer_AL_editText02" />
+
+    <EditText
+        android:id="@+id/answer_AL_editText03"
+        android:layout_width="157dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answer_AL_label03" />
+
+    <Button
+        android:id="@+id/submit_AL_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="submitCarNames"
+        android:text="@string/submit_AL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AL_imageView03" />
+
+    <ImageView
+        android:id="@+id/AL_imageView03"
+        android:layout_width="227dp"
+        android:layout_height="148dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AL_imageView02" />
+
+    <TextView
+        android:id="@+id/correct_answer03_text_view_AL"
+        android:layout_width="148dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="12dp"
+        android:gravity="center"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answer_AL_editText03" />
+
+    <TextView
+        android:id="@+id/answer_AL_label01"
+        android:layout_width="97dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="64dp"
+        android:text="@string/first_car"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/timer_text_view_AL"
+        android:layout_width="61dp"
+        android:layout_height="49dp"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/points"
+        android:textAlignment="textEnd"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@+id/points_display_AL_textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

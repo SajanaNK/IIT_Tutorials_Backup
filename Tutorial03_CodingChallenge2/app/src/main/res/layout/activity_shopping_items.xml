@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShoppingItems">
+
+    <Button
+        android:id="@+id/cheese_button"
+        android:layout_width="337dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="384dp"
+        android:onClick="getShoppingItem"
+        android:text="@string/cheese"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/apple_button"
+        android:layout_width="337dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="436dp"
+        android:text="@string/apple"
+        android:onClick="getShoppingItem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/noodles_button"
+        android:layout_width="337dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="488dp"
+        android:text="@string/noodles"
+        android:onClick="getShoppingItem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/onion_button"
+        android:layout_width="337dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/onions"
+        android:onClick="getShoppingItem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/icecream_button"
+        android:layout_width="337dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="84dp"
+        android:text="@string/icecream"
+        android:onClick="getShoppingItem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/juice_button"
+        android:layout_width="337dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="136dp"
+        android:text="@string/juice"
+        android:onClick="getShoppingItem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/milk_button"
+        android:layout_width="337dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="188dp"
+        android:text="@string/milk"
+        android:onClick="getShoppingItem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/biscuits_button"
+        android:layout_width="337dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="236dp"
+        android:text="@string/biscuits"
+        android:onClick="getShoppingItem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/chocolate_button"
+        android:layout_width="337dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="284dp"
+        android:text="@string/chocolate"
+        android:onClick="getShoppingItem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/cereal_button"
+        android:layout_width="337dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="336dp"
+        android:text="@string/cereal"
+        android:onClick="getShoppingItem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

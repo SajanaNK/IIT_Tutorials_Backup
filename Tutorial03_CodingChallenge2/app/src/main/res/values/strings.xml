@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Tutorial03_CodingChallenge2</string>
+    <string name="add_item">Add Item</string>
+    <string name="cereal">Cereal</string>
+    <string name="chocolate">Chocolate</string>
+    <string name="biscuits">Biscuits</string>
+    <string name="milk">Milk</string>
+    <string name="juice">Juice</string>
+    <string name="icecream">IceCream</string>
+    <string name="onions">Onions</string>
+    <string name="noodles">Noodles</string>
+    <string name="apple">Apple</string>
+    <string name="cheese">Cheese</string>
+</resources>
